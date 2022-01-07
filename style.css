@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(50deg, #FFAFBD,#ffc3a0);
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 568px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E0F8D1;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 10px;
+  background-image: url(./images/pome.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  color: #fff;
+  background: linear-gradient(50deg, #FFAFBD,#ffc3a0);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  border-bottom: 1px solid #E0F8D1;
+}
+.input-text {
+  width: 90%;
+  padding: 0.3em;
+  border: none;
+}
+.add-button {
+  width: 20%;
+  border: none;
+  background: #D398B7;
+  color: #fff;
+  outline: none;
+}
+.add-button:hover {
+  cursor: pointer;
+  background: #A484AA;
+}
+.list {
+  list-style: none;
+}
+.list li {
+  display: flex;
+  border-bottom: 1px solid #E0F8D1;
+  padding: 1em;
+  align-items: center;
+}
+.like {
+  flex: 1;
+}
+.item {
+  flex: 8;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.manage {
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like i {
+  color: #FFAFBD;
+}
+.check {
+  color:#D398B7;
+}
+.clear {
+  color: #8D65B8;
+}
+.done .item {
+  text-decoration: line-through;
+  color: #E0F8D1;
+}
+.done .check {
+  visibility: hidden;
+}
