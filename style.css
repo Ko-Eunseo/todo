@@ -37,7 +37,7 @@
 header {
   color: #fff;
   background: linear-gradient(50deg, #FFAFBD,#ffc3a0);
-  padding: 1em;
+  padding: 3em 1em 2em;
   display: flex;
   align-items: center;
   justify-content: center;
